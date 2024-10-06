@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Itens a Lista</title>
+</head>
+
+<body>
+    <h1>Adicionar Intens a Lista.</h1>
+    <script>
+        let lista = []
+        let novoItem = prompt("Digite um item ou - para encerrar")
+        while (novoItem != "-") {
+            lista.push(novoItem);
+            novoItem = prompt("Digite um item ou - para encerrar");
+        }
+        if(lista.length ==0){
+            alert("A lista esta vazia.");
+        } else { 
+            alert("Voê deve comprar estes itens:");
+            for (let i = 0; i < lista.length; i++) {
+                alert(lista[i]);
+            }
+        }
+    </script>
+</body>
+
+</html>
